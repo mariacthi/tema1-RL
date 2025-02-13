@@ -170,7 +170,7 @@ def sender_default(testname, packets):
     #    ok = validate_all_from_host_or_replies(hs, packets)
 
     #return res and ok
-    
+
     return True
 
 
@@ -296,7 +296,7 @@ def icmp_check_arrival_p(testname, packets):
 
 Test = namedtuple("Test", ["host_s", "host_r", "router", "active_fn", "passive_fn", "categories", "host_p"])
 TESTS = OrderedDict([
-        
+
         # MAC table tests
         ("ICMP_0_2_ARRIVES_2", Test(0, 2, 0, icmp_a, icmp_check_arrival_p, ["1. learning"], 2)),
         ("ICMP_0_3_ARRIVES_3", Test(0, 3, 0, icmp_a, icmp_check_arrival_p, ["1. learning"], 3)),
